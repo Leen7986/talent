@@ -1,0 +1,104 @@
+/* ---------- BODY */
+
+body{
+    font-family: Verdana;
+    background: radial-gradient(#ffffff,#353535);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    /* pour centrer tout le site */
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 1500px;
+    width: 1080px;
+}
+
+/* ---------- all div elements in the main area = left-area and right-area*/
+
+#main_area > div
+{
+    height: 1500px;
+}
+
+/* ---------- main area in the page */
+
+#main_area
+{
+    width: 1080px;
+}
+
+#cv_title_h1
+{
+    font-size: 40pt;
+    font-family: verdana;
+    font-weight: bold;
+    height: 65px;
+    font-variant-caps: small-caps;
+    letter-spacing: 5px;
+    background: #ffffff77;
+    text-align: center;
+    margin: 0;
+    margin-left: -70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title_h2
+{
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.subtitle_h3
+{
+    font-size: 13pt;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.horizontal-line
+{
+    display: flex;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.7);
+    width: 100px;
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.subtitle_education
+{
+    font-size: 11pt;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.text
+{
+    font-size: 10.5pt;
+    line-height: 1.4;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.subtitle_experience
+{
+    font-size: 10.5pt;
+    font-style: italic;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.descriptive_text_experience
+{
+    font-size: 10.5pt;
+    line-height: 1.4;
+    margin: 0;
+    margin-top: 23px;
+}
