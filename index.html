@@ -8,126 +8,193 @@
 
 <body>
 	<div>
-		<h1>Appartement</h1>
+		<h1>Studio à Saint-Mandrier-sur-Mer,<br>presqu'île de Toulon</h1>
+		<p>
+			Le studio se situe dans le port de plaisance de la presqu'île de Saint-Mandrier-sur-Mer,
+			au 3ème étage <em>(combles)</em> d'une ancienne maison sur le quai Jaean Jaurès.
+		</p>
+		<p>
+			Il n'y a pas de place de parc avec le studio, mais 2 parkings gratuits se trouvent
+			à proximité, environ 3 min à pied.
+			Pour ceux qui veulent venir en transport public, il y a une navette depuis Toulon
+			pour 2€/pers. et le ponton d'amarrage est droit devant la maison.
+		</p>
+
+		<ul>
+			<strong>Le studio est composé :</strong>
+			<li>d'une pièce principale avec 2 canapés-lits, une table à manger, TV, ...</li>
+			<li>d'un coin cuisine équipée avec plaque de cuisson, frigo, réduit et ustensiles pour 4 personnes</li>
+			<li>d'un WC-douche</li>
+			<li>et d'une grande terrasse avec vue sur le port et cheminée pour les grillades</li>
+		</ul>
+		<br>
+		<div class="maps">
+			<a class="map" href="plan_staint-mandrier-sur-mer.pdf" target="_blank">Plan de Saint-Mandrier-sur-Mer</a>
+			<a class="map" href="plan_staint-mandrier-sur-mer.pdf" target="_blank">Plan du centre ville</a>
+		</div>
 	</div>
-	<!-- Photos -->
-	<!-- <div>
-		<div class="mySlidesPhoto">
-			<img src="photos/1.jpg">
-		</div>
-		<div class="mySlidesPhoto">
-			<img src="photos/2.jpg">
-		</div>
-
-
-	</div> 
-		-->
-
-	<!-- Agenda -->
+	<!-- Pictures -->
 	<div>
-		<div class="slideshow-container">
-			<div class="mySlides">
-				<!-- Mai 2022 -->
-				<div class="text">Mai 2022</div>
-				<img src="agenda_2022/2022_05.pdf">
-			</div>
-			<div class="mySlides">
-				<!-- Juin 2022 -->
-				<div class="text">Juin 2022</div>
-				<img src="agenda_2022/2022_06.pdf">
-			</div>
-			<div class="mySlides">
-				<!-- Juillet 2022 -->
-				<div class="text">Juillet 2022</div>
-				<img src="agenda_2022/2022_07.pdf">
-			</div>
-			<div class="mySlides">
-				<!-- Août 2022 -->
-				<div class="text">Août 2022</div>
-				<img src="agenda_2022/2022_08.pdf">
-			</div>
-			<div class="mySlides">
-				<!-- Septembre 2022 -->
-				<div class="text">Septembre 2022</div>
-				<img src="agenda_2022/2022_09.pdf">
-			</div>
-			<div class="mySlides">
-				<!-- Octobre 2022 -->
-				<div class="text">Octobre 2022</div>
-				<img src="agenda_2022/2022_10.pdf">
-			</div>
-			<div class="mySlides">
-				<!-- Novembre 2022 -->
-				<div class="text">Novembre 2022</div>
-				<img src="agenda_2022/2022_11.pdf">
-			</div>
-			<div class="mySlides">
-				<!-- Décembre 2022 -->
-				<div class="text">Décembre 2022</div>
-				<img src="agenda_2022/2022_12.pdf">
-			</div>
-			<div class="mySlides">
-				<!-- Janvier 2023 -->
-				<div class="text">Janvier 2023</div>
-				<img src="agenda_2023/2023_01.pdf">
-			</div>
-			<div class="mySlides">
-				<!-- Février 2023 -->
-				<div class="text">Février 2023</div>
-				<img src="agenda_2023/2023_02.pdf">
-			</div>
-			<div class="mySlides">
-				<!-- Mars 2023 -->
-				<div class="text">Mars 2023</div>
-				<img src="agenda_2023/2023_03.pdf">
-			</div>
+		<div class="block-pictures">
+			<div class="pictures"><img src="photos/1.jpg"></div>
+			<div class="pictures"><img src="photos/2.jpg"></div>
+			<div class="pictures"><img src="photos/3.jpg"></div>
+			<div class="pictures"><img src="photos/4.jpg"></div>
+			<div class="pictures"><img src="photos/5.jpg"></div>
+			<div class="pictures"><img src="photos/6.jpg"></div>
+			<div class="pictures"><img src="photos/7.jpg"></div>
+			<div class="pictures"><img src="photos/8.jpg"></div>
+			<div class="pictures"><img src="photos/9.jpg"></div>
+			<div class="pictures"><img src="photos/10.jpg"></div>
 
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<a class="prev" onclick="plusSlidesP(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlidesP(1)">&#10095;</a>
 		</div>
 		<br>
-		<div class="smallCircleCalendar">
-			<span class="dot" onclick="currentSlide(1)" title="Mai 2022"></span>
-			<span class="dot" onclick="currentSlide(2)" title="Juin 2022"></span>
-			<span class="dot" onclick="currentSlide(3)" title="Juillet 2022"></span>
-			<span class="dot" onclick="currentSlide(4)" title="Août 2022"></span>
-			<span class="dot" onclick="currentSlide(5)" title="Septembre 2022"></span>
-			<span class="dot" onclick="currentSlide(6)" title="Octobre 2022"></span>
-			<span class="dot" onclick="currentSlide(7)" title="Novembre 2022"></span>
-			<span class="dot" onclick="currentSlide(8)" title="Décembre 2022"></span>
-			<span class="dot" onclick="currentSlide(9)" title="Janvier 2023"></span>
-			<span class="dot" onclick="currentSlide(10)" title="Février 2023"></span>
-			<span class="dot" onclick="currentSlide(11)" title="Mars 2023"></span>
+		<div class="dotPictures">
+			<span class="dotP" onclick="currentSlideP(1)"></span>
+			<span class="dotP" onclick="currentSlideP(2)"></span>
+			<span class="dotP" onclick="currentSlideP(3)"></span>
+			<span class="dotP" onclick="currentSlideP(4)"></span>
+			<span class="dotP" onclick="currentSlideP(5)"></span>
+			<span class="dotP" onclick="currentSlideP(6)"></span>
+			<span class="dotP" onclick="currentSlideP(7)"></span>
+			<span class="dotP" onclick="currentSlideP(8)"></span>
+			<span class="dotP" onclick="currentSlideP(9)"></span>
+			<span class="dotP" onclick="currentSlideP(10)"></span>
 		</div>
 		<script>
-			var slideIndex = 1;
-			showSlides(slideIndex);
-			function plusSlides(n) {
-				showSlides(slideIndex += n);
+			var slideIndexP = 1;
+			showSlidesP(slideIndexP);
+			function plusSlidesP(n) {
+				showSlidesP(slideIndexP += n);
 			}
-			function currentSlide(n) {
-				showSlides(slideIndex = n);
+			function currentSlideP(n) {
+				showSlidesP(slideIndexP = n);
 			}
-			function showSlides(n) {
-				var i;
-				var slides = document.getElementsByClassName("mySlides");
-				var dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {
-					slideIndex = 1
+			function showSlidesP(n) {
+				var p;
+				var slidesP = document.getElementsByClassName("pictures");
+				var dotsP = document.getElementsByClassName("dotP");
+				if (n > slidesP.length) {
+					slideIndexP = 1
 				}
 				if (n < 1) {
-					slideIndex = slides.length
+					slideIndexP = slidesP.length
 				}
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
+				for (p = 0; p < slidesP.length; p++) {
+					slidesP[p].style.display = "none";
 				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
+				for (p = 0; p < dotsP.length; p++) {
+					dotsP[p].className = dotsP[p].className.replace(" active", "");
 				}
-				slides[slideIndex - 1].style.display = "block";
-				dots[slideIndex - 1].className += " active";
+				slidesP[slideIndexP - 1].style.display = "block";
+				dotsP[slideIndexP - 1].className += " active";
 			}
 		</script>
+	</div>
+	<!-- Calendar -->
+	<div>
+		<div>
+			<h2>Calendrier des disponibilités</h2>
+		</div>
+		<div class="block-calendar">
+			<!-- Mai 2022 -->
+			<div class="calendar">
+				<div class="month">Mai 2022</div>
+				<img src="agenda_2022/2022_05.pdf">
+			</div>
+			<!-- Juin 2022 -->
+			<div class="calendar">
+				<div class="month">Juin 2022</div>
+				<img src="agenda_2022/2022_06.pdf">
+			</div>
+			<!-- Juillet 2022 -->
+			<div class="calendar">
+				<div class="month">Juillet 2022</div>
+				<img src="agenda_2022/2022_07.pdf">
+			</div>
+			<!-- Août 2022 -->
+			<div class="calendar">
+				<div class="month">Août 2022</div>
+				<img src="agenda_2022/2022_08.pdf">
+			</div>
+			<!-- Septembre 2022 -->
+			<div class="calendar">
+				<div class="month">Septembre 2022</div>
+				<img src="agenda_2022/2022_09.pdf">
+			</div>
+			<!-- Octobre 2022 -->
+			<div class="calendar">
+				<div class="month">Octobre 2022</div>
+				<img src="agenda_2022/2022_10.pdf">
+			</div>
+			<!-- Novembre 2022 -->
+			<div class="calendar">
+				<div class="month">Novembre 2022</div>
+				<img src="agenda_2022/2022_11.pdf">
+			</div>
+			<!-- Décembre 2022 -->
+			<div class="calendar">
+				<div class="month">Décembre 2022</div>
+				<img src="agenda_2022/2022_12.pdf">
+			</div>
+			<!-- Previous and next calendar -->
+			<a class="prev" onclick="plusSlidesC(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlidesC(1)">&#10095;</a>
+		</div>
+		<br>
+		<div class="dotCalendar">
+			<span class="dotC" onclick="currentSlideC(1)"></span>
+			<span class="dotC" onclick="currentSlideC(2)"></span>
+			<span class="dotC" onclick="currentSlideC(3)"></span>
+			<span class="dotC" onclick="currentSlideC(4)"></span>
+			<span class="dotC" onclick="currentSlideC(5)"></span>
+			<span class="dotC" onclick="currentSlideC(6)"></span>
+			<span class="dotC" onclick="currentSlideC(7)"></span>
+			<span class="dotC" onclick="currentSlideC(8)"></span>
+		</div>
+		<script>
+			var slideIndexC = 1;
+			showSlidesC(slideIndexC);
+			function plusSlidesC(n) {
+				showSlidesC(slideIndexC += n);
+			}
+			function currentSlideC(n) {
+				showSlidesC(slideIndexC = n);
+			}
+			function showSlidesC(n) {
+				var c;
+				var slidesC = document.getElementsByClassName("calendar");
+				var dotsC = document.getElementsByClassName("dotC");
+				if (n > slidesC.length) {
+					slideIndexC = 1
+				}
+				if (n < 1) {
+					slideIndexC = slidesC.length
+				}
+				for (c = 0; c < slidesC.length; c++) {
+					slidesC[c].style.display = "none";
+				}
+				for (c = 0; c < dotsC.length; c++) {
+					dotsC[c].className = dotsC[c].className.replace(" active", "");
+				}
+				slidesC[slideIndexC - 1].style.display = "block";
+				dotsC[slideIndexC - 1].className += " active";
+			}
+		</script>
+		<br><br>
+		<div class="season">
+			<span class="high_season" title="juin, juillet, août et septembre">Haute saison</span>
+			<span class="average_season" title="mars, avril, mai et octobre">Moyenne saison</span>
+			<span class="low_season" title="janvier, février, novembre et décembre">Basse saison</span>
+			<span class="no_free">Pas disponible</span>
+		</div>
+	</div>
+	<!-- Contact -->
+	<div class="contact">
+		<p class="contactTitle">Questions et réservation :</p>
+		<a class="mail" href="mailto:email">contact@association-talent.ch</a>
 	</div>
 </body>
 
