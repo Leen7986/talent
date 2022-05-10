@@ -7,14 +7,128 @@
 </head>
 
 <body>
-	<div class=slider-scroll>
-		<img id="janvier" src="janvier.jpg" alt>
-		<img id="fevrier" src="fevrier.jpg" alt>
+	<div>
+		<h1>Appartement</h1>
 	</div>
-	<ul class="ancre">
-		<li><a href="#janvier.jpg">1</a></li>
-		<li><a href="#fevrier.jpg">2</a></li>
-	</ul>
+	<!-- Photos -->
+	<!-- <div>
+		<div class="mySlidesPhoto">
+			<img src="photos/1.jpg">
+		</div>
+		<div class="mySlidesPhoto">
+			<img src="photos/2.jpg">
+		</div>
+
+
+	</div> 
+		-->
+
+	<!-- Agenda -->
+	<div>
+		<div class="slideshow-container">
+			<div class="mySlides">
+				<!-- Mai 2022 -->
+				<div class="text">Mai 2022</div>
+				<img src="agenda_2022/2022_05.pdf">
+			</div>
+			<div class="mySlides">
+				<!-- Juin 2022 -->
+				<div class="text">Juin 2022</div>
+				<img src="agenda_2022/2022_06.pdf">
+			</div>
+			<div class="mySlides">
+				<!-- Juillet 2022 -->
+				<div class="text">Juillet 2022</div>
+				<img src="agenda_2022/2022_07.pdf">
+			</div>
+			<div class="mySlides">
+				<!-- Août 2022 -->
+				<div class="text">Août 2022</div>
+				<img src="agenda_2022/2022_08.pdf">
+			</div>
+			<div class="mySlides">
+				<!-- Septembre 2022 -->
+				<div class="text">Septembre 2022</div>
+				<img src="agenda_2022/2022_09.pdf">
+			</div>
+			<div class="mySlides">
+				<!-- Octobre 2022 -->
+				<div class="text">Octobre 2022</div>
+				<img src="agenda_2022/2022_10.pdf">
+			</div>
+			<div class="mySlides">
+				<!-- Novembre 2022 -->
+				<div class="text">Novembre 2022</div>
+				<img src="agenda_2022/2022_11.pdf">
+			</div>
+			<div class="mySlides">
+				<!-- Décembre 2022 -->
+				<div class="text">Décembre 2022</div>
+				<img src="agenda_2022/2022_12.pdf">
+			</div>
+			<div class="mySlides">
+				<!-- Janvier 2023 -->
+				<div class="text">Janvier 2023</div>
+				<img src="agenda_2023/2023_01.pdf">
+			</div>
+			<div class="mySlides">
+				<!-- Février 2023 -->
+				<div class="text">Février 2023</div>
+				<img src="agenda_2023/2023_02.pdf">
+			</div>
+			<div class="mySlides">
+				<!-- Mars 2023 -->
+				<div class="text">Mars 2023</div>
+				<img src="agenda_2023/2023_03.pdf">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		<div class="smallCircleCalendar">
+			<span class="dot" onclick="currentSlide(1)" title="Mai 2022"></span>
+			<span class="dot" onclick="currentSlide(2)" title="Juin 2022"></span>
+			<span class="dot" onclick="currentSlide(3)" title="Juillet 2022"></span>
+			<span class="dot" onclick="currentSlide(4)" title="Août 2022"></span>
+			<span class="dot" onclick="currentSlide(5)" title="Septembre 2022"></span>
+			<span class="dot" onclick="currentSlide(6)" title="Octobre 2022"></span>
+			<span class="dot" onclick="currentSlide(7)" title="Novembre 2022"></span>
+			<span class="dot" onclick="currentSlide(8)" title="Décembre 2022"></span>
+			<span class="dot" onclick="currentSlide(9)" title="Janvier 2023"></span>
+			<span class="dot" onclick="currentSlide(10)" title="Février 2023"></span>
+			<span class="dot" onclick="currentSlide(11)" title="Mars 2023"></span>
+		</div>
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = slides.length
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+			}
+		</script>
+	</div>
 </body>
 
 </html>

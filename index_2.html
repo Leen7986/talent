@@ -1,0 +1,162 @@
+<!DOCTYPE html> <!-- indicates that the site is in HTML -->
+<html lang="fr">
+
+<head>
+	<link rel="stylesheet" href="style_body_2.css" />
+	<title>Location appartement</title> <!-- page or tab title -->
+</head>
+
+<body>
+	<div>
+		<!-- Pictures -->
+		<div class="block-pictures">
+			<div class="pictures"><img src="photos/1.jpg"></div>
+			<div class="pictures"><img src="photos/2.jpg"></div>
+			<div class="pictures"><img src="photos/3.jpg"></div>
+			<div class="pictures"><img src="photos/4.jpg"></div>
+			<div class="pictures"><img src="photos/5.jpg"></div>
+			<div class="pictures"><img src="photos/6.jpg"></div>
+			<div class="pictures"><img src="photos/7.jpg"></div>
+			<div class="pictures"><img src="photos/8.jpg"></div>
+			<div class="pictures"><img src="photos/9.jpg"></div>
+			<div class="pictures"><img src="photos/10.jpg"></div>
+
+			<a class="prev" onclick="plusSlidesP(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlidesP(1)">&#10095;</a>
+		</div>
+		<br>
+		<div class="dotPictures">
+			<span class="dotP" onclick="currentSlideP(1)"></span>
+			<span class="dotP" onclick="currentSlideP(2)"></span>
+			<span class="dotP" onclick="currentSlideP(3)"></span>
+			<span class="dotP" onclick="currentSlideP(4)"></span>
+			<span class="dotP" onclick="currentSlideP(5)"></span>
+			<span class="dotP" onclick="currentSlideP(6)"></span>
+			<span class="dotP" onclick="currentSlideP(7)"></span>
+			<span class="dotP" onclick="currentSlideP(8)"></span>
+			<span class="dotP" onclick="currentSlideP(9)"></span>
+			<span class="dotP" onclick="currentSlideP(10)"></span>
+		</div>
+		<script>
+			var slideIndexP = 1;
+			showSlidesP(slideIndexP);
+			function plusSlidesP(n) {
+				showSlidesP(slideIndexP += n);
+			}
+			function currentSlideP(n) {
+				showSlidesP(slideIndexP = n);
+			}
+			function showSlidesP(n) {
+				var p;
+				var slidesP = document.getElementsByClassName("pictures");
+				var dotsP = document.getElementsByClassName("dotP");
+				if (n > slidesP.length) {
+					slideIndexP = 1
+				}
+				if (n < 1) {
+					slideIndexP = slidesP.length
+				}
+				for (p = 0; p < slidesP.length; p++) {
+					slidesP[p].style.display = "none";
+				}
+				for (p = 0; p < dotsP.length; p++) {
+					dotsP[p].className = dotsP[p].className.replace(" active", "");
+				}
+				slidesP[slideIndexP - 1].style.display = "block";
+				dotsP[slideIndexP - 1].className += " active";
+			}
+		</script>
+	</div>
+
+	<div>
+		<!-- Calendar -->
+		<div class="block-calendar">
+			<!-- Mai 2022 -->
+			<div class="calendar">
+				<div class="month">Mai 2022</div>
+				<img src="agenda_2022/2022_05.pdf">
+			</div>
+			<!-- Juin 2022 -->
+			<div class="calendar">
+				<div class="month">Juin 2022</div>
+				<img src="agenda_2022/2022_06.pdf">
+			</div>
+			<!-- Juillet 2022 -->
+			<div class="calendar">
+				<div class="month">Juillet 2022</div>
+				<img src="agenda_2022/2022_07.pdf">
+			</div>
+			<!-- Août 2022 -->
+			<div class="calendar">
+				<div class="month">Août 2022</div>
+				<img src="agenda_2022/2022_08.pdf">
+			</div>
+			<!-- Septembre 2022 -->
+			<div class="calendar">
+				<div class="month">Septembre 2022</div>
+				<img src="agenda_2022/2022_09.pdf">
+			</div>
+			<!-- Octobre 2022 -->
+			<div class="calendar">
+				<div class="month">Octobre 2022</div>
+				<img src="agenda_2022/2022_10.pdf">
+			</div>
+			<!-- Novembre 2022 -->
+			<div class="calendar">
+				<div class="month">Novembre 2022</div>
+				<img src="agenda_2022/2022_11.pdf">
+			</div>
+			<!-- Décembre 2022 -->
+			<div class="calendar">
+				<div class="month">Décembre 2022</div>
+				<img src="agenda_2022/2022_12.pdf">
+			</div>
+			<!-- Previous and next calendar -->
+			<a class="prev" onclick="plusSlidesC(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlidesC(1)">&#10095;</a>
+		</div>
+		<br>
+		<div class="dotCalendar">
+			<span class="dotC" onclick="currentSlideC(1)"></span>
+			<span class="dotC" onclick="currentSlideC(2)"></span>
+			<span class="dotC" onclick="currentSlideC(3)"></span>
+			<span class="dotC" onclick="currentSlideC(4)"></span>
+			<span class="dotC" onclick="currentSlideC(5)"></span>
+			<span class="dotC" onclick="currentSlideC(6)"></span>
+			<span class="dotC" onclick="currentSlideC(7)"></span>
+			<span class="dotC" onclick="currentSlideC(8)"></span>
+		</div>
+		<script>
+			var slideIndexC = 1;
+			showSlidesC(slideIndexC);
+			function plusSlidesC(n) {
+				showSlidesC(slideIndexC += n);
+			}
+			function currentSlideC(n) {
+				showSlidesC(slideIndexC = n);
+			}
+			function showSlidesC(n) {
+				var c;
+				var slidesC = document.getElementsByClassName("calendar");
+				var dotsC = document.getElementsByClassName("dotC");
+				if (n > slidesC.length) {
+					slideIndexC = 1
+				}
+				if (n < 1) {
+					slideIndexC = slidesC.length
+				}
+				for (c = 0; c < slidesC.length; c++) {
+					slidesC[c].style.display = "none";
+				}
+				for (c = 0; c < dotsC.length; c++) {
+					dotsC[c].className = dotsC[c].className.replace(" active", "");
+				}
+				slidesC[slideIndexC - 1].style.display = "block";
+				dotsC[slideIndexC - 1].className += " active";
+			}
+		</script>
+	</div>
+
+</body>
+
+</html>

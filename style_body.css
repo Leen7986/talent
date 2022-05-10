@@ -3,7 +3,7 @@
 body {
 	font-family: Verdana;
 	background: radial-gradient(#ffffff, #57788C);
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
 	/* pour centrer tout le site */
 	margin: auto;
 	margin-top: 100px;
@@ -12,131 +12,82 @@ body {
 	width: 1080px;
 }
 
-.slider-scroll {
-
-	width: 700px;
-	max-width: 100%;
-	max-height: 398px;
-	margin: 2rem auto;
-	display: flex;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
-	scroll-snap-type: x mandatory;
-	-webkit-overflow-scrolling: touch;
-}
-
-.slider-scroll img {
-	scroll-snap-align: center;
-	min-width: 100%;
-	border-radius: 5px;
-}
-
-.ancre {
-	margin: 1rem auto;
-	display: flex;
-	justify-content: center;
-}
-
-.ancre li {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	width: 30px;
-	height: 30px;
-	background: #404040;
-	border-radius: 50%;
-}
-
-.ancre li a {
-	color: white
-}
-
-.ancre li:not(:last-child) {
-	margin-right: 30px;
-}
-
-
-.ancre li a:hover {
-	opacity: 0.5;
-}
-
-/* ---------- all div elements in the main area = left-area and right-area*/
-
-#main_area>div {
-	height: 1500px;
-}
-
-/* ---------- main area in the page */
-
-#main_area {
-	width: 1080px;
-}
-
-#cv_title_h1 {
-	font-size: 40pt;
-	font-family: verdana;
-	font-weight: bold;
-	height: 65px;
-	font-variant-caps: small-caps;
-	letter-spacing: 5px;
-	background: #ffffff77;
+h1 {
+	font-size: 30px;
 	text-align: center;
-	margin: 0;
-	margin-left: -70px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-top: 30px;
 }
 
-.title_h2 {
-	font-size: 16pt;
+img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.mySlides {
+	display: none
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 14px;
+	color: black;
 	font-weight: bold;
-	letter-spacing: 4px;
-	margin: 0;
-	margin-bottom: 15px;
+	font-size: 25px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
 }
 
-.subtitle_h3 {
-	font-size: 13pt;
-	font-weight: bold;
-	margin: 0;
-	margin-bottom: 2px;
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
 }
 
-.horizontal-line {
-	display: flex;
-	border-bottom: 3px solid rgba(0, 0, 0, 0.7);
-	width: 100px;
-	box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.5);
-	margin-bottom: 20px;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.0);
 }
 
-.subtitle_education {
-	font-size: 11pt;
-	font-weight: bold;
-	font-style: italic;
-	letter-spacing: 0.5px;
-	margin: 0;
-	margin-top: 5px;
-	margin-bottom: 2px;
-}
-
+/* text (ex : Janvier) */
 .text {
-	font-size: 10.5pt;
-	line-height: 1.4;
-	margin: 0;
-	margin-bottom: 20px;
+	color: #000000;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 30px;
+	text-align: center;
+
 }
 
-.subtitle_experience {
-	font-size: 10.5pt;
-	font-style: italic;
-	line-height: 1.4;
-	margin: 0;
+.smallCircleCalendar {
+	text-align: center;
 }
 
-.descriptive_text_experience {
-	font-size: 10.5pt;
-	line-height: 1.4;
-	margin: 0;
-	margin-top: 23px;
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #999999;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #111111;
 }
